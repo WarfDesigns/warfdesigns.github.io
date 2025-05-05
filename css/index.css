@@ -1,0 +1,115 @@
+body{
+    font-family: "Open Sans", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: "/img/black-scratch.webp";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main {
+    display: grid;
+    columns: 1fr;
+    background: white;
+    padding: 20px;
+    margin: 0;
+}
+.nav {
+    position: center;
+}
+.navli {
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    padding: 0px;
+}
+.navli li {
+    margin: 0 20px;
+}
+header {
+    margin:0;
+}
+footer {
+    display: grid;
+    columns: 1fr;
+    background: black;
+}
+.menu-container {
+    position: sticky;
+    top: 0;
+    background: black;
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 0;
+    font-size: 0.8rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.overlay{ 
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    padding: 0px;
+}
+.logo {
+    text-align: center;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+footer {
+    margin: 0;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    }
+.contact {
+    color: black;
+    text-decoration: none;
+    }
+@media (min-width:700px){
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body{
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+    background-image: "/img/black-scratch.webp";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer {
+    margin: 0;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    }
+.contact {
+    color: black;
+    text-decoration: none;
+    }
+    .nav {
+        position: center;
+    }
+    .navli {
+        display: flex;
+        justify-content: center;
+        list-style: none;  
+        padding: 0px;
+    }
+    .navli li {
+        margin: 0 20px;
+    }
+    .menu-container {
+        font-size: 1.2rem;
+    }
+}

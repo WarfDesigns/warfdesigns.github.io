@@ -15,6 +15,15 @@ main {
     padding: 20px;
     margin: 0;
 }
+main a{
+    color: black;
+}
+main a:hover{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
 .nav {
     position: center;
 }
@@ -27,6 +36,19 @@ main {
 .navli li {
     margin: 0 20px;
 }
+li a {
+    color: white; 
+}
+a {
+    text-decoration: none;
+}
+li a:hover {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
 header {
     margin:0;
 }
@@ -44,11 +66,7 @@ footer {
     margin: 0;
     font-size: 0.8rem;
 }
-a {
-    text-decoration: none;
-    color: white;
-}
-.overlay{ 
+.overlay { 
     background: rgba(0, 0, 0, 0.8);
     margin: 0px;
     padding: 0px;
@@ -65,10 +83,23 @@ footer {
     padding: 3%;
     color: white;
     }
+footer a {
+    color: white
+}
+footer a:hover {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+}
 .contact {
     color: black;
     text-decoration: none;
     }
+    a {
+        text-decoration: none;
+    }
+
 @media (min-width:700px){
 .container{
     max-width: 800px;
@@ -82,7 +113,7 @@ body{
     font-family: "Open Sans", serif;
     margin: 0;
     padding: 0;
-    background-image: "/img/black-scratch.webp";
+    background-image: url('http://www.brentwarf.com/img/Flyer-Portfolio%20copy.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,6 +141,40 @@ footer {
         margin: 0 20px;
     }
     .menu-container {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    li a:hover {
+        color: black;
+        background: white;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    li a {
+        color: white;
+        
+    }
+    a {
+        text-decoration: none;
+    }
+    main a{
+        color: black;
+    }
+    main a:hover{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    }
+    .copyright a {
+        color: white;
+    }
+    .copyright a:hover {
+        color: black!important;
+        background: white!important;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .overlay{
+       
     }
 }

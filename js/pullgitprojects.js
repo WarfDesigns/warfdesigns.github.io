@@ -21,7 +21,7 @@
                         card.innerHTML = `
                             <h3><a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${repo.name}</a></h3>
                             <p>${repo.description || "No description provided."}</p>
-                            <p class="repo-meta">⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</p>
+                            <p class="repo-meta">🍴 ${repo.forks_count}</p>
                         `;
                         container.appendChild(card);
                     });

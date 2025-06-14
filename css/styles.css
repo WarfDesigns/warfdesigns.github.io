@@ -186,17 +186,19 @@ footer {
     margin-top: 2rem;
 }
 .repo-card {
-    background: #fff;
+    background: #e4e4e4;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 0px 4px rgba(0,0,0,1);
     transition: transform 0.2s;
     position: relative;
     z-index:1;
 }
 .repo-card:hover {
     transform: translateY(-5px);
-    z-index: 0;    
+    z-index: 0;
+    box-shadow: 0 3px 4px rgba(0,0,0,1);  
+    background: #d3fff1;  
 }
 .repo-card h3 {
     margin: 0;

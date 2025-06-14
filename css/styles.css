@@ -142,6 +142,7 @@ footer {
     }
     .menu-container {
         font-size: 1.3rem;
+         z-index: 10;
     }
     li a:hover {
         color: black;
@@ -177,4 +178,36 @@ footer {
     .overlay{
        
     }
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.repo-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    position: relative;
+    z-index:1;
+}
+.repo-card:hover {
+    transform: translateY(-5px);
+    z-index: 0;    
+}
+.repo-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #0366d6;
+}
+.repo-card p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+.repo-meta {
+    font-size: 0.9rem;
+    color: #888;
 }

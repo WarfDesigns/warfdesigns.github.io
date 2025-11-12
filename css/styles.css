@@ -121,7 +121,7 @@ body{
     font-family: "Open Sans", serif;
     margin: 0;
     padding: 0;
-    background-image: url('http://www.brentwarf.com/img/Flyer-Portfolio%20copy.webp');
+    background-image: url("../img/black-scratch.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

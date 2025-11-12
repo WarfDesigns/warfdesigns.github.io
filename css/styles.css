@@ -116,6 +116,21 @@ footer a:hover {
     align-items: center;
     padding: 1%;
 }
+.appMenu {
+    display: none;
+
+}
+.appMenu a {
+    display: none;
+
+}
+.appmenucontainer {
+    display: none;
+
+}
+.appmenucontainer a {
+    display: none;
+}
 
 @media (min-width:700px){
 .container{
@@ -229,6 +244,22 @@ footer {
 .repo-meta {
     font-size: 0.9rem;
     color: #888;
+}
+
+.appMenu {
+    display: none;
+
+}
+.appMenu a {
+    display: none;
+
+}
+.appmenucontainer {
+    display: none;
+
+}
+.appmenucontainer a {
+    display: none;
 }
 @media (max-width: 600px) {
     .appMenu {

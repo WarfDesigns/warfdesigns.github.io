@@ -141,48 +141,6 @@ footer {
     padding: 3%;
     color: white;
     }
-.appMenu {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-right: #fff solid 1px;
-    border-left:  #fff solid 1px;
-}
-.appMenu a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: white;
-}
-.appmenucontainer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-    color:white;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 99999 !important; /* <- raise z-index and force priority */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-.appmenucontainer a {
-    color:white;
-    text-decoration: none;
-}
 .contact {
     color: black;
     text-decoration: none;
@@ -271,4 +229,49 @@ footer {
 .repo-meta {
     font-size: 0.9rem;
     color: #888;
+}
+@media (max-width: 600px) {
+    .appMenu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: #fff solid 1px;
+    border-left:  #fff solid 1px;
+}
+.appMenu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+}
+.appmenucontainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color:white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99999 !important; /* <- raise z-index and force priority */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.appmenucontainer a {
+    color:white;
+    text-decoration: none;
+}
+
 }

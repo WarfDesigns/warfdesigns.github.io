@@ -37,8 +37,6 @@ main a:hover{
 .header {
     text-align: center;
     margin:0;
-    position: sticky;
-    top: 0;
 }
 .header h1 {
     margin: 10px 0;

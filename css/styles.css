@@ -1,77 +1,83 @@
-
-body {
-    font-family: "Open Sans", serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    background-image: url('http://www.brentwarf.com/img/Flyer-Portfolio%20copy.webp');
+html {
+    background-image: url("../img/black-scratch.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-    
+
+body{
+    font-family: "Open Sans", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/black-scratch.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-h1,
-h2 {
-    color: #000;
-    font-family: "Trade Winds", serif;
+main {
+    display: grid;
+    columns: 1fr;
+    background: white;
+    padding: 20px;
+    margin: 0;
+}
+main a{
+    color: black;
+}
+main a:hover{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+.nav {
+    position: center;
 }
 .header {
     text-align: center;
-    position: sticky;
-    top: 0;
 }
 .header h1 {
     margin: 10px 0;
 }
-.contact {
-    margin: 10px 0;
-    font-size: 14px;
+.navli li {
+    margin: 0 20px;
 }
-.contact a {
-    color: hsl(0, 100%, 50%);
+li a {
+    color: white; 
+}
+a {
     text-decoration: none;
 }
-.section {
-    margin: 20px 0;
-}
-.section h2 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-}
-.item {
-    margin-bottom: 15px;
-}
-.item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #000000;
-}
-.item p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-.skills ul li {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
+li a:hover {
+    color: black;
+    background: white;
+    padding: 5px;
     border-radius: 4px;
+}
+
+header {
+    margin:0;
+}
+footer {
+    display: grid;
+    columns: 1fr;
+    background: black;
+}
+.menu-container {
+    position: sticky;
+    top: 0;
+    background: black;
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 0;
+    font-size: 0.8rem;
+    box-shadow: 0 0 7px 0px rgba(143, 255, 255, 0.648);
+}
+.overlay { 
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    padding: 0px;
 }
 .logo {
     text-align: center;
@@ -79,37 +85,224 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-.footer {
-    
-    text-align: center;
-        padding: 0;
-    color: #FFF;
+footer {
+    margin: 0;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    box-shadow: 0 -7 7px 0px rgba(143, 255, 255, 0.648);
+    }
+footer a {
+    color: white
 }
-.footer > a {
-    color: #FFF;
+footer a:hover {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+.contact {
+    color: black;
     text-decoration: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
 }
-.overlay{ 
-    background: rgba(0, 0, 0, 0.8);
+.appMenu {
+    display: none;
+
 }
-.menucontainer {
-    position: sticky;
-    top: 0;
+.appMenu a {
+    display: none;
+
+}
+.appmenucontainer {
+    display: none;
+
+}
+.appmenucontainer a {
+    display: none;
+}
+
+@media (min-width:700px){
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body{
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/black-scratch.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer {
+    margin: 0;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    }
+.contact {
+    color: black;
+    text-decoration: none;
+    }
+    .nav {
+        position: center;
+    }
+    .navli {
+        display: flex;
+        justify-content: center;
+        list-style: none;  
+        padding: 0px;
+    }
+    .navli li {
+        margin: 0 20px;
+    }
+    .menu-container {
+        font-size: 1.3rem;
+         z-index: 10;
+    }
+    li a:hover {
+        color: black;
+        background: white;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    li a {
+        color: white;
+        
+    }
+    a {
+        text-decoration: none;
+    }
+    main a{
+        color: black;
+    }
+    main a:hover{
     background: black;
     color: white;
-    padding-top: 1%;
-    padding-bottom:1%;
-    
+    padding: 5px;
+    border-radius: 4px;
+    }
+    .copyright a {
+        color: white;
+    }
+    .copyright a:hover {
+        color: black!important;
+        background: white!important;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .overlay{
+       
+    }
 }
-.nav {
-    position: center;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
-.navli {
+.repo-card {
+    background: #e4e4e4;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0px 4px rgba(0,0,0,1);
+    transition: transform 0.2s;
+    position: relative;
+    z-index:1;
+}
+.repo-card:hover {
+    transform: translateY(-5px);
+    z-index: 0;
+    box-shadow: 0 3px 4px rgba(0,0,0,1);  
+    background: #d3fff1;  
+}
+.repo-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #0366d6;
+}
+.repo-card p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+.repo-meta {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.appMenu {
+    display: none;
+
+}
+.appMenu a {
+    display: none;
+
+}
+.appmenucontainer {
+    display: none;
+
+}
+.appmenucontainer a {
+    display: none;
+}
+@media (max-width: 600px) {
+    .appMenu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    list-style: none;  
-    padding: 0px;
+    border-right: #fff solid 1px;
+    border-left:  #fff solid 1px;
 }
-.navli li {
-    margin: 0 20px;
+.appMenu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+}
+.appmenucontainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color:white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99999 !important; /* <- raise z-index and force priority */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.appmenucontainer a {
+    color:white;
+    text-decoration: none;
+}
+
 }

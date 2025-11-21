@@ -1,65 +1,47 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Resume</title>
         <link rel="stylesheet" href="/css/styles.css">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Projects</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Trade+Winds&display=swap"
+            rel="stylesheet">
+        <script src="/js/dynamic-templates.js" defer></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="overlay">
-            <div class="menucontainer">
+        <section class="overlay">
+            
+            <header class="menu-container">
                 <nav>
                     <ul class="navli">
-                        <li>Visit My Company</li>
-                        <li>More About Me</li>
-                        <li>My Story</li>
-                        <li>Github Projects</li>
+                        <li><a href="/index.html">My Resume</a></li>
+                        <li><a href="https://www.warfdesigns.com">Visit My Company</a></li>
+                        <li><a href="/projects.html">Github Projects</a></li>
                     </ul>
                 </nav>
-            </div>
+            </header>
             <main class="container">
                 <section class="section">
                     <h2>Github Projects</h2>
                     <div class="item">
-                        <h3>Resume</h3>
-                        <p>
-                             Built a simple resume in HTML and CSS that covers everything I've learned so far, and website builds.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/WarfDesigns/build-something-of-your-choice"><h3>Build Something of Your Choice</h3></a>
-                        <p>
-                             Was told to build something of my own. So I decided to concentrate my skills on forms. I made a simple registration form that shared when a person was available for an appointment, and declared how urgent the appointment was.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/WarfDesigns/About-Me-HTML-Assignment"><h3>About-Me-HTML-Assignment</h3></a>
-                        <p>
-                             Built simple html assignment that shares a little about me. Part of the intro to programming in Code:You.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <a href="https://github.com/WarfDesigns/Warf-Designs-Website-Redesign"><h3>Warf Designs Website Redesign</h3></a>
-                        <p>Building a redesign of my current website to improve web core vitals.</p>
+                        <div class="projects" id="projects-container">Loading projects...</div>
                     </div>
                 </section>
             </main>
-            <footer><p class="footer">Copyright 2025 | <a href="www.warfdesigns.com">www.warfdesigns.com</a></p>
-            <br>
-            <a href="www.warfdesigns.com"><img src="http:///www.brentwarf.com/img/Logo.webp" class="logo"></a></footer>
-            <br>
-        </div>        
-        <script src="" async defer></script>
+            <footer>
+                <p class="copyright">
+                    Copyright 2025 | <a href="www.warfdesigns.com">www.warfdesigns.com</a>
+                </p>
+                <br>
+                <a href="www.warfdesigns.com">
+                    <img src="http:///www.brentwarf.com/img/Logo.webp" class="logo">
+                </a>
+            </footer>
+        </section>
+        <script src="/js/pullgitprojects.js"></script>        
     </body>
 </html>

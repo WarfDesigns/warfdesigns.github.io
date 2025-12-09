@@ -56,12 +56,6 @@ li a:hover {
     padding: 5px;
     border-radius: 4px;
 }
-
-header {
-    margin:0;
-    position: sticky;
-    top: 0;
-}
 #header {
     margin:0;
     position: sticky;
@@ -214,9 +208,6 @@ footer {
         background: white!important;
         padding: 5px;
         border-radius: 4px;
-    }
-    .overlay{
-       
     }
 }
 .projects {
